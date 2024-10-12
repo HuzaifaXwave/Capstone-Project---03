@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <div class="bg-dark py-1 w-auto default-header">
-        <nav class="navbar navbar-expand-lg container">
-            <div class="container-fluid h-100">
+    <div class="bg-dark py-1 w-100 default-header fixed-top">
+        <nav class="navbar">
+            <div class="container">
                 <div>
                     <a href=""><i class="bi bi-cart4 fs-3 rounded-circle py-0 px-1 bg-danger text-white"></i></a>
                     <a class="navbar-brand fw-semibold fs-3 ps-1 text-white" href="#">Cartzilla</a>
@@ -40,12 +40,13 @@
                 </div>
 
                 <div class="text-white d-flex align-items-center gap-4">
-                    <i class="bi bi-brightness-high"></i>
-                    <i class="bi bi-person-fill"></i>
-                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-brightness-high header-icon"></i>
+                    <i class="bi bi-person-fill header-icon"></i>
+                    <i class="bi bi-heart header-icon"></i>
                     <button class="border-0 fs-6 rounded-5 bg-body-secondary px-2 py-1" type="button"
                         data-bs-toggle="offcanvas" href="#offcanvasExampleTwo" role="button"
-                        aria-controls="offcanvasExample"><i class="bi bi-cart2 fw-bolder"></i></button>
+                        aria-controls="offcanvasExample"><i class="bi bi-cart2 fw-bolder"></i>
+                    </button>
                 </div>
 
             </div>
@@ -54,14 +55,14 @@
     </div>
     <!-- header for responsive screen -->
     <div class="d-none" id="responsive-header">
-        <nav class="navbar navbar-dark bg-dark w-100 py-2">
+        <nav class="navbar navbar-dark bg-dark w-100 py-3 mx-2 my-1 rounded-4">
             <div class="container d-flex flex-row">
                 <div class="d-flex align-items-center">
                     <button class="navbar-toggler border-0 fs-6" type="button" data-bs-toggle="offcanvas"
                         href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="bi bi-list fs-2 fw-bolder menu-icon"></i>
                     </button>
-                    <div class="ms-2">
+                    <div class="">
                         <a href=""><i
                                 class="bi bi-cart4 fs-3 rounded-circle py-0 px-1 bg-danger text-white align-middle"></i></a>
                         <a class="navbar-brand fw-semibold align-middle fs-1 text-white" href="#">Cartzilla</a>
@@ -74,7 +75,7 @@
                     <i class="bi bi-heart"></i>
                     <button class="border-0 fs-6 rounded-5 bg-transparent text-white" type="button"
                         data-bs-toggle="offcanvas" href="#offcanvasExampleResponsive" role="button"
-                        aria-controls="offcanvasExample"><i class="bi bi-cart2 fw-bolder"></i>
+                        aria-controls="offcanvasExample"><i class="bi bi-cart2 fw-bold"></i>
                     </button>
                 </div>
             </div>
@@ -89,11 +90,11 @@
 
     <!-- nav-down-header -->
 
-    <div class="container-fluid bg-dark default-header">
+    <div class="bg-dark default-header" id="navbars">
         <div class="container d-flex ">
             <div class="categories-section text-white dropdown">
                 <div class=" py-2 px-3 d-flex justify-content-between rounded-top">
-                    <div>
+                    <div class="py-1">
                         <i class="bi bi-grid"></i>
                         <span class="fw-semibold">Categories</span>
                     </div>
@@ -113,8 +114,8 @@
                             <a class="nav-link text-white fw-normal text-secondary dropdown-toggle" type="button"
                                 data-bs-toggle="dropdown" href="#">Account</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Sign In</a></li>
-                                <li><a class="dropdown-item" href="#">Sign</a></li>
+                                <li><a class="dropdown-item" href="./pages/SignIn.html">Sign In</a></li>
+                                <li><a class="dropdown-item" href="./pages/SignUp.html">Sign Up</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown ">
@@ -151,88 +152,88 @@
 
     <!-- Category-section -->
     <div class="container d-flex">
-        <div class="d-flex flex-column justify-content-between category-list border rounded-bottom  bg-white h-auto"
+        <div class="d-flex flex-column justify-content-between category-list border rounded-bottom-4  bg-white h-auto py-1"
             id="left-category-list">
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
                 <div class="d-flex justify-content-between align-items-center category-items">
                     <i class="bi bi-display fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">Computer & Accessories</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-phone fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">Smartphones & Tablets</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-tv fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">TV , Video & Audio</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-speaker fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">Speakers & Photo & Video</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-camera fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">Cameras, Photo & Video</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-printer fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">Printers & Ink</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-battery-charging fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">Charging Stations</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-headphones fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">Headphones</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-watch fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">Wearable Electronics</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-battery-full fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">Powerbanks</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-device-ssd fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">HDD/SSD Data Storage</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-1">
+            <div class="d-flex justify-content-between align-items-center px-3 ">
                 <div class="d-flex justify-content-between align-items-center category-items">
-                    <i class="bi bi-display fs-5"></i>
+                    <i class="bi bi-controller fs-5"></i>
                     <a class="ms-2 text-decoration-none text-dark">Video Games</a>
                 </div>
                 <i class="bi bi-caret-right"></i>
@@ -241,13 +242,14 @@
         </div>
 
         <!-- hero carousel section -->
+
         <div class="w-100 h-auto">
 
             <div class="m-3">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div
-                            class="carousel-item active d-flex justify-content-around align-items-center carousel-bg rounded-4">
+                            class="carousel-item active d-flex justify-content-around align-items-center carousel-bg rounded-4 py-3">
                             <div class="w-auto ps-2">
                                 <span>Feel the quality sound</span>
                                 <h1 class="fw-bolder fs-1">Headphones <br> ProMax</h1>
@@ -259,7 +261,7 @@
                             <img src="./images/hero-carosel-img-1.png" class="w-50 " alt="...">
                         </div>
                         <div
-                            class="carousel-item d-flex justify-content-around align-items-center carousel-bg rounded-4">
+                            class="carousel-item d-flex justify-content-around align-items-center carousel-bg rounded-4 py-3">
                             <div class="w-auto ps-2">
                                 <span>Virtual reality glasses</span>
                                 <h1 class="fw-bolder fs-1">Experience <br>New Reality</h1>
@@ -271,7 +273,7 @@
                             <img src="./images/hero-carosel-img-3.png" class="w-50 " alt="...">
                         </div>
                         <div
-                            class="carousel-item d-flex justify-content-around align-items-center carousel-bg rounded-4">
+                            class="carousel-item d-flex justify-content-around align-items-center carousel-bg rounded-4 py-3">
                             <div class="w-auto ps-2">
                                 <span>Deal of the week</span>
                                 <h1 class="fw-bolder fs-1">Powerful <br> iPad Pro M2</h1>
@@ -291,38 +293,35 @@
 
     <!-- service section -->
 
-    <div class="container py-5">
-        <div class=" d-flex flex-row justify-content-between align-items-center">
-            <div class="d-flex align-items-center service-section">
+    <div class="container mt-5 ">
+        <div class=" d-flex flex-row flex-wrap justify-content-between align-items-center my-4">
+            <div class="d-flex align-items-center service-section col-lg-3 col-md-4 col-sm-6 col-6 service-cards">
                 <i class="bi bi-truck rounded-circle py-2 px-3 fs-4"></i>
-                <div class="lh-1 ms-3">
-                    <span class="fw-semibold fs-6">Free Shipping & Returns</span>
-                    <br>
-                    <span class=" lh-lg order-txt">For all orders over $199.00</span>
+                <div class="badge lh-1 ms- d-flex flex-column align-items-center text-wrap">
+                    <span class="fw-semibold fs-6 text-dark">Free Shipping & Returns</span>
+                    <span class=" lh-lg order-txt text-secondary">For all orders over $199.00</span>
                 </div>
             </div>
-            <div class="d-flex align-items-center service-section">
+            <div class="d-flex align-items-center service-section col-lg-3 col-md-4 col-sm-6 col-6 service-cards py-2">
                 <i class="bi bi-credit-card rounded-circle py-2 px-3 fs-4"></i>
-                <div class="lh-1 ms-3">
-                    <span class="fw-semibold fs-6">Secure Payment</span>
-                    <br>
-                    <span class=" lh-lg order-txt">We ensure secure payment</span>
+                <div class="badge lh-1 ms- d-flex flex-column align-items-center">
+                    <span class="fw-semibold fs-6 text-dark">Secure Payment</span>
+                    <span class=" lh-lg order-txt text-secondary">We ensure secure payment</span>
                 </div>
             </div>
-            <div class="d-flex align-items-center service-section">
+            <div class="d-flex align-items-center service-section col-lg-3 col-md-4 col-sm-6 col-6 service-cards">
                 <i class="bi bi-arrow-repeat rounded-circle py-2 px-3 fs-4"></i>
-                <div class="lh-1 ms-3">
-                    <span class="fw-semibold fs-6">Money Back Guarantee</span>
-                    <br>
-                    <span class=" lh-lg order-txt">Returning money 30 days</span>
+                <div class="badge lh-1 ms- d-flex flex-column align-items-center text-wrap ">
+                    <span class="fw-semibold fs-6 text-dark">Money Back Guarantee</span>
+                    <span class=" lh-lg order-txt text-secondary ">Returning money 30 days</span>
                 </div>
             </div>
-            <div class="d-flex align-items-center service-section">
+            <div
+                class="d-flex justify-content-around align-items-center service-section col-lg-3 col-md-4 col-sm-6 col-6 service-cards">
                 <i class="bi bi-chat-dots-fill rounded-circle py-2 px-3 fs-4"></i>
-                <div class="lh-1 ms-3">
-                    <span class="fw-semibold fs-6">24/7 Customer Support</span>
-                    <br>
-                    <span class=" lh-lg order-txt">Friendly customer support</span>
+                <div class="badge lh-1 ms- d-flex flex-column align-items-center text-wrap">
+                    <span class="fw-semibold fs-6 text-dark">24/7 Customer Support</span>
+                    <span class=" lh-lg order-txt text-secondary">Friendly customer support</span>
                 </div>
             </div>
         </div>
@@ -332,9 +331,10 @@
 
     <div class="container mt-5 h-75">
         <h1 class="fs-3 fw-semibold">New arrivals</h1>
-        <div class="d-flex flex-row justify-content-between ">
-            <div class="product-bg rounded-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="w-75 pt-4 sub-img" src="./images/sub-section-img.png" alt="">
+        <div class="d-flex flex-row w-100 " id="new-arrival-section">
+            <div
+                class="product-bg rounded-4 d-flex flex-column justify-content-center align-items-center border col-lg-4 col-sm-8 col-12">
+                <img class="w-50 pt-4 sub-img" src="./images/sub-section-img.png" alt="">
                 <div class="text-center">
                     <h1 class="fw-bolder text-white">Macbook</h1>
                     <span>Be Pro Anywhere</span>
@@ -342,154 +342,162 @@
                     <button class="mt-3 text-white bg-danger border-0 rounded-2 py-1 px-3">From $1,199</button>
                 </div>
             </div>
-            <div class="card-left py-4 ms-3 h-100">
-                <div class=" w-auto d-flex flex-row justify-content-around align-items-center ">
-                    <div>
-                        <img class="w-75" src="./images/watch-img.png" alt="">
+            <div class=" d-flex flex-row flex-wrap justify-content-evenly align-items-center ">
+                <div class="d-flex flex-column flex-wrap col-lg-6 col-md-4 col-sm-3 col-12">
+                    <div class="d-flex flex-row align-items-center col-lg-12 col-md-3 col-sm-8 col-12">
+                        <div class="w-50 ">
+                            <img class="w-75 img-animation" src="./images/watch-img.png" alt="">
+                        </div>
+                        <div class="product-txt w-50 ">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2">45</span>
+                            </div>
+
+                            <span class="text-nowrap">Smart Watch Series 7, White</span>
+                            <p class="fs-5 fw-bolder">$449.00</p>
+                        </div>
                     </div>
-                    <div class="product-txt w-100 me-5">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <span class="ms-2">45</span>
+                    <div class="d-flex flex-row flex-wrap align-items-center ">
+                        <div class="w-50">
+                            <img class="w-75 img-animation" src="./images/VR glasses.png" alt="">
                         </div>
 
-                        <span class="text-nowrap">Smart Watch Series 7, White</span>
-                        <p class="fs-5 fw-bolder">$449.00</p>
+                        <div class="product-txt w-50">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2">45</span>
+                            </div>
+
+                            <span class="text-nowrap">Smart Watch Series 7, White</span>
+                            <p class="fs-5 fw-bolder">$449.00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap align-items-center ">
+                        <div class="w-50">
+                            <img class="w-75 img-animation" src="./images/headphones.png" alt="">
+                        </div>
+                        <div class="product-txt w-50">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2">45</span>
+                            </div>
+
+                            <span class="text-nowrap">Smart Watch Series 7, White</span>
+                            <p class="fs-5 fw-bolder">$449.00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap align-items-center ">
+                        <div class="w-50">
+                            <img class="w-75 img-animation" src="./images/Apple macbook.png" alt="">
+                        </div>
+                        <div class="product-txt w-50">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2">45</span>
+                            </div>
+
+                            <span class="text-nowrap">Smart Watch Series 7, White</span>
+                            <p class="fs-5 fw-bolder">$449.00</p>
+                        </div>
                     </div>
                 </div>
-                <div class=" w-auto d-flex flex-row justify-content-evenly align-items-center ">
-                    <div>
-                        <img class="w-75" src="./images/VR glasses.png" alt="">
-                    </div>
-                    <div class="product-txt w-100 me-5">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <span class="ms-2">45</span>
-                        </div>
+                <!-- service-cards-2 -->
 
-                        <span class="text-nowrap">Smart Watch Series 7, White</span>
-                        <p class="fs-5 fw-bolder">$449.00</p>
-                    </div>
-                </div>
-                <div class=" w-auto d-flex flex-row justify-content-evenly align-items-center ">
-                    <div>
-                        <img class="w-75" src="./images/headphones.png" alt="">
-                    </div>
-                    <div class="product-txt w-100 me-5">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <span class="ms-2">45</span>
+                <div class="d-flex flex-column flex-wrap col-lg-6 col-md-4 col-sm-6 col-12">
+                    <div class="d-flex flex-row flex-wrap align-items-center">
+                        <div class="w-50">
+                            <img class="w-75 img-animation" src="./images/Apple Ipad.png" alt="">
                         </div>
+                        <div class="product-txt w-50">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2">45</span>
+                            </div>
 
-                        <span class="text-nowrap">Smart Watch Series 7, White</span>
-                        <p class="fs-5 fw-bolder">$449.00</p>
-                    </div>
-                </div>
-                <div class=" w-auto d-flex flex-row justify-content-evenly align-items-center ">
-                    <div>
-                        <img class="w-75" src="./images/Apple macbook.png" alt="">
-                    </div>
-                    <div class="product-txt w-100 me-5">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <span class="ms-2">45</span>
+                            <span class="text-nowrap">Smart Watch Series 7, White</span>
+                            <p class="fs-5 fw-bolder">$449.00</p>
                         </div>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap align-items-center">
+                        <div class="w-50">
+                            <img class="w-75 img-animation" src="./images/Airpods.png" alt="">
+                        </div>
+                        <div class="product-txt w-50">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2">45</span>
+                            </div>
 
-                        <span class="text-nowrap">Smart Watch Series 7, White</span>
-                        <p class="fs-5 fw-bolder">$449.00</p>
+                            <span class="text-nowrap">Smart Watch Series 7, White</span>
+                            <p class="fs-5 fw-bolder">$449.00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap align-items-center">
+                        <div class="w-50">
+                            <img class="w-75 img-animation" src="./images/Powerbank.png" alt="">
+                        </div>
+                        <div class="product-txt w-50">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2">45</span>
+                            </div>
+
+                            <span class="text-nowrap">Smart Watch Series 7, White</span>
+                            <p class="fs-5 fw-bolder">$449.00</p>
+                        </div>
+                    </div>
+                    <div class=" d-flex flex-row flex-wrap align-items-center">
+                        <div class="w-50">
+                            <img class="w-75 img-animation" src="./images/Apple phone 14 pro.png" alt="">
+                        </div>
+                        <div class="product-txt w-50">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2">45</span>
+                            </div>
+
+                            <span class="text-nowrap">Smart Watch Series 7, White</span>
+                            <p class="fs-5 fw-bolder">$449.00</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card-left py-4 ms-3">
-                <div class=" w-auto d-flex flex-row justify-content-evenly align-items-center ">
-                    <div>
-                        <img class="w-75" src="./images/Apple Ipad.png" alt="">
-                    </div>
-                    <div class="product-txt w-100 me-5">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <span class="ms-2">45</span>
-                        </div>
 
-                        <span class="text-nowrap">Smart Watch Series 7, White</span>
-                        <p class="fs-5 fw-bolder">$449.00</p>
-                    </div>
-                </div>
-                <div class=" w-auto d-flex flex-row justify-content-evenly align-items-center ">
-                    <div>
-                        <img class="w-75" src="./images/Airpods.png" alt="">
-                    </div>
-                    <div class="product-txt w-100 me-5">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <span class="ms-2">45</span>
-                        </div>
 
-                        <span class="text-nowrap">Smart Watch Series 7, White</span>
-                        <p class="fs-5 fw-bolder">$449.00</p>
-                    </div>
-                </div>
-                <div class=" w-auto d-flex flex-row justify-content-evenly align-items-center ">
-                    <div>
-                        <img class="w-100" src="./images/Powerbank.png" alt="">
-                    </div>
-                    <div class="product-txt w-100 ms-5">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <span class="ms-2">45</span>
-                        </div>
 
-                        <span class="text-nowrap">Smart Watch Series 7, White</span>
-                        <p class="fs-5 fw-bolder">$449.00</p>
-                    </div>
-                </div>
-                <div class=" w-auto d-flex flex-row justify-content-evenly align-items-center ">
-                    <div>
-                        <img class="w-75" src="./images/Apple phone 14 pro.png" alt="">
-                    </div>
-                    <div class="product-txt w-100 me-5">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <span class="ms-2">45</span>
-                        </div>
-
-                        <span class="text-nowrap">Smart Watch Series 7, White</span>
-                        <p class="fs-5 fw-bolder">$449.00</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -510,7 +518,7 @@
         <!-- cards section 01 -->
 
         <div class="d-flex flex-wrap flex-row justify-content-between w-100 row">
-            <div class="w-25" id="first-product-cart">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6" id="first-product-cart">
                 <span class="rounded-2 bg-danger px-2 py-1 text-white">-21%</span>
                 <img class="w-100" src="./images/VR glasses.png" alt="">
                 <div>
@@ -526,12 +534,13 @@
 
                     <div class="d-flex flex-row justify-content-between align-items-center mt-2">
                         <span>$340.99</span>
-                        <button class="px-2 py-1 border-0 rounded-3 bg-white-50" id="product-cart-button"><i class="bi bi-cart2 fw-bolder"></i>
+                        <button class="px-2 py-1 border-0 rounded-3 bg-white-50" id="product-cart-button"><i
+                                class="bi bi-cart2 fw-bolder"></i>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="w-25">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <br>
                 <img class="w-100" src="./images/Apple phone 14 pro.png" alt="">
                 <div>
@@ -552,7 +561,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-25">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <br>
                 <img class="w-100" src="./images/watch-img.png" alt="">
                 <div>
@@ -573,7 +582,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-25">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <span class="rounded-2 bg-primary px-2 py-1 text-white">New</span>
                 <img class="w-100" src="./images/Apple macbook.png" alt="">
                 <div>
@@ -597,8 +606,8 @@
             </div>
         </div>
         <!-- cards section 02 -->
-        <div class="d-flex flex-wrap flex-row justify-content-between w-100 row">
-            <div class="w-25">
+        <div class="d-flex flex-wrap flex-row justify-content-between row">
+            <div class="align-middle col-lg-3 col-md-4 col-sm-6 col-6">
                 <img class="w-100" src="./images/Apple Ipad.png" alt="">
                 <div>
                     <div>
@@ -618,7 +627,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-25">
+            <div class="align-middle col-lg-3 col-md-4 col-sm-6 col-6">
                 <img class="w-100" src="./images/Airpods.png" alt="">
                 <div>
                     <div>
@@ -638,7 +647,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-25">
+            <div class="align-middle col-lg-3 col-md-4 col-sm-6 col-6">
                 <img class="w-100" src="./images/macbook pro.png" alt="">
                 <div>
                     <div>
@@ -658,7 +667,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-25">
+            <div class="align-middle col-lg-3 col-md-4 col-sm-6 col-6">
                 <img class="w-100" src="./images/headphones.png" alt="">
                 <div>
                     <div>
@@ -681,9 +690,11 @@
             </div>
         </div>
 
-        <div class="mt-5 d-flex h-100 positon-relative">
+        <!-- sale banner -->
+
+        <div class="mt-5 d-flex h-100 positon-relative" id="promotion-banner">
             <div
-                class="w-25 d-flex flex-row justify-content-center align-items-center sale-banner p-5  rounded-3 sale-banner-bg">
+                class=" d-flex flex-row justify-content-center align-items-center sale-banner p-5  rounded-3 sale-banner-bg">
                 <div>
                     <h1 class="fw-bolder">20</h1>
                 </div>
@@ -692,34 +703,81 @@
                     <span>OFF</span>
                 </div>
             </div>
-            <div class=" sale-banner-bg d-flex flex-row justify-content-start w-75 p-5 rounded-3">
+            <div class="sale-banner-bg d-flex flex-row justify-content-start w-100 p-5 rounded-3">
                 <div class="d-flex flex-column justify-content-center align-items-center lh-1">
                     <p class="fs-3 fw-bolder ms-5">SEASONAL WEEKLY SALE 2024</p>
                     <p class="me-5">Use code <span class="bg-white px-1 py-1 rounded-4 fw-bold">Sale 2024</span> to get
                         best offer</p>
                 </div>
+                <img class="w-25 position-absolute sale-banner-img" src="./images/camera.png" alt="">
             </div>
-            <img class="w-25 position-absolute sale-banner-img" src="./images/camera.png" alt="">
         </div>
 
-        <div class="mt-5 d-flex flex-wrap flex-wrap justify-content-between">
+        <div class="sale-banner-bg rounded-2 py-5 mt-5" id="responsive-banner">
+            <div class="text-center">
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <h1 class="fw-bolder">20<span class="">%</span></h1>
+                    <span>OFF</span>
+                </div>
+                <div class="py-2">
+                    <p class="fs-3 fw-bolder">SEASONAL WEEKLY SALE <br> 2024</p>
+                    <p class="">Use code <span class="bg-white px-1 py-1 rounded-4 fw-bold">Sale 2024</span> to get
+                        best offer
+                    </p>
+                </div>
+                <div class="w-100">
+                    <img class="w-100" src="./images/camera.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- special offer section -->
+
+        <div class="mt-5 d-flex flex-row justify-content-between flex-wrap " id="offer-section">
             <div class="d-flex flex-row align-items-center">
-                <p class="fs-4 fw-semibold">Special offers for you</p>
-                <p class="fs-6 ms-3 p-1 rounded-3 bg-danger text-white">12d</p>
-                <p class="px-2">:</p>
-                <p class="p-1 rounded-3 bg-danger text-white">11h</p>
-                <p class="px-2">:</p>
-                <p class="p-1 rounded-3 bg-danger text-white">45m</p>
+                <p class="fs-4 fw-semibold text-nowrap">Special offers for you</p>
+                <div class="d-flex align-items-center ms-2">
+                    <p class="fs-6 p-1 rounded-3 bg-danger text-white">12d</p>
+                    <p class="px-2">:</p>
+                    <p class="p-1 rounded-3 bg-danger text-white">11h</p>
+                    <p class="px-2">:</p>
+                    <p class="p-1 rounded-3 bg-danger text-white">45m</p>
+                </div>
             </div>
-            <div>
-                <span>View all</span>
-                <i class="bi bi-caret-right"></i>
+            <div class="">
+                <div class="d-flex align-items-center">
+                    <span>View all</span>
+                    <i class="bi bi-caret-right"></i>
+                </div>
             </div>
+
+        </div>
+        <!-- responsive-offer-section -->
+        <div class="mt-5 d-flex flex-column flex-wrap" id="offer-section2">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+                <span class="fs-4 fw-semibold text-nowrap">Special offers for you</span>
+                <div class="d-flex align-items-center">
+                    <span>View all</span>
+                    <i class="bi bi-caret-right"></i>
+                </div>
+
+            </div>
+            <div class="mt-2">
+                <div class="d-flex">
+                    <p class="fs-6 p-1 rounded-3 bg-danger text-white">12d</p>
+                    <p class="px-2">:</p>
+                    <p class="p-1 rounded-3 bg-danger text-white">11h</p>
+                    <p class="px-2">:</p>
+                    <p class="p-1 rounded-3 bg-danger text-white">45m</p>
+                </div>
+            </div>
+
         </div>
         <hr>
 
         <div class="d-flex flex-wrap flex-row justify-content-between w-100 row">
-            <div class="w-25">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <img class="w-100" src="./images/Apple Ipad.png" alt="">
                 <div>
                     <div>
@@ -744,7 +802,7 @@
 
                 </div>
             </div>
-            <div class="w-25">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <img class="w-100" src="./images/Airpods.png" alt="">
                 <div>
                     <div>
@@ -769,7 +827,7 @@
 
                 </div>
             </div>
-            <div class="w-25">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <img class="w-100" src="./images/watch-img.png" alt="">
                 <div>
                     <div>
@@ -794,7 +852,7 @@
 
                 </div>
             </div>
-            <div class="w-25">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <img class="w-100" src="./images/headphones.png" alt="">
                 <div>
                     <div>
@@ -821,42 +879,67 @@
                 </div>
             </div>
         </div>
+        <!-- brand logo section -->
 
-        <div class="d-flex flex-row flex-wrap justify-content-between align-items-center">
-            <div class="border align-middle px-5 py-3 rounded-3">
-                <div>
-                    <i class="bi bi-apple fs-2 text-secondary"></i>
-                    <span class="fs-4 text-secondary">Apple</span>
-                </div>
-
+        <div class="d-flex flex-row flex-wrap justify-content-between align-items-center w-100" id="brand-cards">
+            <div class="border w-auto  rounded-3 px-5 py-3 text-center "> 
+                <span class="fs-5 text-secondary text-nowrap"><i class="bi bi-apple text-secondary"></i>Apple</span>
             </div>
-            <div class="border align-middle px-5 py-4 rounded-3">
+            <div class="border w-auto  rounded-3 px-5 py-3 text-center ">
                 <span class="fs-5 text-secondary fw-bold fst-italic">MOTOROLA</span>
             </div>
-            <div class="border align-middle px-5 py-4 rounded-3">
+            <div class="border w-auto  rounded-3 px-5 py-3 text-center ">
                 <span class="fs-5 text-secondary fw-bold">Canon</span>
             </div>
-            <div class="border align-middle px-5 py-4 rounded-3">
+            <div class="border w-auto  rounded-3 px-5 py-3 text-center ">
                 <span class="fs-5 text-secondary fw-bold">SAMSUNG</span>
             </div>
-            <div class="border align-middle px-5 py-4 rounded-3">
+            <div class="border w-auto  rounded-3 px-5 py-3 text-center ">
                 <span class="fs-5 text-secondary fw-bold">Sony</span>
             </div>
-            <div class="border align-middle px-4 py-4 rounded-3">
-                <span class="fs-5 text-secondary fw-bold">All brands</span>
-                <i class="bi bi-plus-circle"></i>
+            <div class="border w-auto  rounded-3 px-4 py-3 text-center ">
+                <span class="fs-5 text-secondary fw-bold text-nowrap">All brands <i class="bi bi-plus-circle"></i></span>
+            </div>
+        </div>
 
+        <!-- responsive-brand-cards -->
+        <div class="d-none flex-column flex-wrap justify-content-between align-items-center w-100" id="resp-brand-cards">
+            <div class="d-flex flex-row justify-content-evenly w-100">
+                <div class="border w-auto  rounded-3 px-4 py-3 text-center "> 
+                    <span class="fs-2 text-secondary text-nowrap"><i class="bi bi-apple text-secondary"></i>Apple</span>
+                </div>
+                <div class="border w-auto  rounded-3 px-3 py-3 text-center ">
+                    <span class="fs-5 text-secondary fw-bold fst-italic">MOTOROLA</span>
+                </div>
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-evenly w-100">
+                <div class="border w-auto  rounded-3 px-4 py-3 text-center ">
+                    <span class="fs-1 text-secondary fw-bold">Canon</span>
+                </div>
+                <div class="border w-auto  rounded-3 px-3 py-3 text-center ">
+                    <span class="fs-4 text-secondary fw-bold">SAMSUNG</span>
+                </div>
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-evenly w-100 mt-">
+                <div class="border w-auto  rounded-3 px-4 py-2 text-center ">
+                    <span class="fs-1 text-secondary fw-bold">SONY</span>
+                </div>
+                <div class="border w-auto  rounded-3 px-2 py-3 text-center ">
+                    <span class="fs-5 text-secondary fw-bold text-nowrap">All brands <i class="bi bi-plus-circle"></i></span>
+                </div>
             </div>
         </div>
 
 
     </div>
 
+    
+
     <div class="mt-5 bg-body-secondary">
         <div class="container">
             <div class="d-flex flex-row flex-wrap justify-content-between py-5">
-                <div class="d-flex flex-column w-50">
-                    <div>
+                <div class="d-flex flex-column w-50 " id="newsletter-section">
+                    <div class="w-auto">
                         <h3>Sign up to our newsletter</h3>
                         <p>Recieve our latest updates about our product & promotions</p>
                         <div class="py-3">
@@ -865,15 +948,14 @@
                             <button class="py-2 px-3 rounded-3 text-white bg-danger border-0">Subscribe</button>
                         </div>
                     </div>
-                    <div class="mt-4 d-flex flex-row justify-content-between w-50">
+                    <div class="mt-4 d-flex flex-row justify-content-between w-50" id="newsletter-icons">
                         <i class="bi bi-instagram bg-light-subtle px-2 py-1 rounded-5 fs-5"></i>
                         <i class="bi bi-facebook bg-light-subtle px-2 py-1 rounded-5 fs-5"></i>
                         <i class="bi bi-youtube bg-light-subtle px-2 py-1 rounded-5 fs-5"></i>
                         <i class="bi bi-twitter bg-light-subtle px-2 py-1 rounded-5 fs-5"></i>
-
                     </div>
                 </div>
-                <div class="w-50 ps-5">
+                <div class="w-50 ps-5 promotion-cards">
                     <div class="d-flex align-items-center">
                         <img class="w-25 rounded-3" src="./images/Promotion-img-1.jpg" alt="">
                         <div class="ms-3">
@@ -965,7 +1047,7 @@
                 </div>
             </footer>
 
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between" id="footer-category-list">
                 <li class="text-secondary list-unstyled">Computers</li>
                 <span class="text-secondary">/</span>
                 <li class="text-secondary list-unstyled fs-6">Smartphones</li>
@@ -990,7 +1072,7 @@
 
             </div>
 
-            <div class="d-flex justify-content-between mt-2">
+            <div class="d-flex justify-content-between mt-2" id="footer-category-list">
                 <li class="text-secondary list-unstyled">Computers</li>
                 <span class="text-secondary">/</span>
                 <li class="text-secondary list-unstyled fs-6">Smartphones</li>
@@ -1045,59 +1127,58 @@
             </div>
             <div class="dropdown mt-3">
                 <div class="d-flex flex-row flex-wrap justify-content-between align-items-center py-2 px-2">
-                    <button class="border-0 bg-white" type="button" data-bs-toggle="dropdown">
+                    <button class="border-0 bg-white  text-decoration-none" >
                         Home
                     </button>
-                    <span class="dropdown-toggle"></span>
+                    <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/SignIn.html">Sign In</a></li>
+                        <li><a class="dropdown-item" href="./pages/SignUp.html">Sign Up</a></li>
+                    </ul>
                 </div>
-
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
             </div>
             <div class="dropdown">
                 <div class="d-flex flex-row flex-wrap justify-content-between align-items-center py-2 px-2">
                     <button class="border-0 bg-white" type="button" data-bs-toggle="dropdown">
                         Shop
                     </button>
-                    <span class="dropdown-toggle"></span>
-                </div>
-
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                    <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>              
             </div>
             <div class="dropdown">
                 <div class="d-flex flex-row flex-wrap justify-content-between align-items-center py-2 px-2">
                     <button class="border-0 bg-white" type="button" data-bs-toggle="dropdown">
                         Account
                     </button>
-                    <span class="dropdown-toggle"></span>
-                </div>
-
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                    <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>  
             </div>
             <div class="dropdown">
                 <div class="d-flex flex-row flex-wrap justify-content-between align-items-center py-2 px-2">
                     <button class="border-0 bg-white" type="button" data-bs-toggle="dropdown">
                         Pages
                     </button>
-                    <span class="dropdown-toggle"></span>
+                    <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                 </div>
-
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+            </div>
+            <div class="d-block text-center w-100 mt-3">
+                <a href="./pages/SignUp.html"><button class="fw-bold border-2 border-primary rounded-pill px-3 py-1 w-50 canvas-btn">Sign Up</button></a>
+                <a href="./pages/SignUp.html"><button class="fw-bold border-2 border-primary rounded-pill px-3 py-1 w-50 canvas-btn mt-2">Sign Up</button></a>
             </div>
         </div>
     </div>
@@ -1109,24 +1190,22 @@
 
     <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasExampleTwo"
         aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">Shopping Cart</h5>
+        <div class="offcanvas-header bg-dark">
+            <h5 class="offcanvas-title fw-semibold text-white" id="offcanvasExampleLabel">Shopping Cart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <h6 class="fs-6 text-secondary">Buy<span class="fw-semibold text-dark"> $183</span> more to get <span
                     class="fw-semibold text-dark">Free Shipping</span>
             </h6>
-            <ol id="order-item-list">
-            </ol>
         </div>
     </div>
 
     <!-- responsive add to cart -->
     <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasExampleResponsive"
         aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">Shopping Cart</h5>
+        <div class="offcanvas-header  bg-dark">
+            <h5 class="offcanvas-title fw-semibold text-white" id="offcanvasExampleLabel">Shopping Cart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">

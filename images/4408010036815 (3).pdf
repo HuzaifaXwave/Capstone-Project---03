@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Unit Report
+</title>
+     <style type="text/css">
+        
+        #ifrmReportViewer {
+  background:url(images/Loaing_image.gif) center center no-repeat;
+}
+
+            </style>
+</head>
+<body>
+    <form method="post" action="./ULReport.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTU0NTk0MDU1M2Rk/aeZn3IAD7sN36dnO/dF/Hlq8Kgm3k9rdWqvJCALGg8=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=mDoqKd8OAieQXwy3cX5dVFgIeorH5kZ5x3-VO_TVyZUnTW5_5GNFzgYQmm-rx6gFZqnMDt3VnyE2KDuXq88qmajB0wtNThMkWT7qE9IvafQ1&amp;t=638403804857838717" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+alert('Due to Server Load, Your Query can not be executed. Please try again later.');//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=lj1dstESWBLMbwelUnR-XWY87WDTyG5KMiDuJbKm9LHleWD-OKEG5D-Ks8oV1K7EYR94fhc_Ld7FpazaTzH7PXTVkLxBJYC4oTCs_jTjpHAa4TrlvJrpe2HoSVuuNl_cs5ODybJLpNsvn9GQsBBQ5msWXuQbLctYnm9ZTm-CTMk1&amp;t=7b65c770" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=59B3j2Rw1hgvuUPzwdyBsMsXLlqopUAVtI2SYBQQ5Q7KDxUpIHiiO-GT-Fm4G1n78uCCPAS10s4h_nQrvTLFmEmtzxwEDcQP-uWpSB9cXHkbVJqNzgSWytpb2bNbSHemlR3NB_7yEMmsqE392tInhoxonG-VhfKPMs_zwlokTtoiYFJKdHyZe27iunR5fil20&amp;t=3cf0aaa4" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=XqITG6JTSaszTB4kEeD7fWs8xi7vplu9T_4nuIXDwtKS2QZ4sYfcwlKQytcozS0N-tyrKVEooQUnTfHkSumiqfBo6f0ZZl6wrAgQZHV6Caqh0z44F7AzW2leMF_1zFP1DCUX5p2yHslf7Ok_gFZ4WjzzN5zxRlOcVpQsEAO8Rq7RcUKPwaXMC4DIvczkkE1i0&amp;t=3cf0aaa4" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=yubIOFrT8rEKpzLRASmIDespC-M6sEZPh4TiEwTqIUGzhKHBJhWsekHDWwtUkM6ef27oSO0na8Xt3UhIhG8Gu9NnI4lGZI3nZlwvq_M_VDH3mfL9bSheElLpefXVwR5-w1Wp7zOWNerokAezy9wTV7P9ZK2ISPTOfV0XUmsJxjk1&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Ydy842NyQw5wbmxlMzrk_vGtSlxF5z0OoMNdZtA293pSl6U6hja5RwTagayX6ZA5S-EXq5O5k4Kn5VPnJMZ27WSPTs07aBq16Gkz8dPnXUDNPdeWU-ZYF8vCAFJ3yzJKbK_gjmOAfnk4YmZ7amnZROa-mYsgP1fe4nVlSnyZ5eY1&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=DjSBV50NKztXHerICj2ak_sTRjAb5TVPwCd3-p7BITAWXU49qEbSWes6eASirwkSOXxKEIR7h6lZU4pHHrivUSygoEaKqcBTQlSsyc_F5RKdPLaP1myeFQejX24Q_oaAp7cx3g_U6HwUvSnVD-Eetjc7tHU1K2fb3poWaEdxstQeIcu103QK_QMathgM6L4K0&amp;t=5f915bbd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AA3014D7" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAARQLnYnTgi61nVffoCsF5PjZM6hzTYoTBeBoadEyLtfxxEQnl2nOf5P19Z7YKUukfY85pbWlDO2hADfoPXD/5tdI7LnNZSM3fQIJjN3ixfQPGXh4BmSFki2A2GWbPCBoMQ=" />
+</div>
+       <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager2', 'form1', [], [], [], 90, '');
+//]]>
+</script>
+
+    <div>
+    
+        <table frame="lhs" style="border-style: double; background-color: #FFFFFF; margin:0px auto;">
+
+          <tr>
+                <td align="center" colspan="4" 
+                    style="color: #FFFFFF; font-weight: bold; font-size: small; ">
+                    <img src="images/PakHeader.png" width="400" />
+                    
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="4" 
+                    style="color: #FFFFFF; font-weight: bold; font-size: small; background-color: #921841;">
+                    <span id="Label3" style="color:White;font-family:Calibri;font-size:Large;">Unit Link Report Portal</span>
+                </td>
+            </tr>
+           
+                <td align="left" class="style5" style="background-color: #F0E1E7">
+                    <span id="Label2" class="labels" style="color:#921841;font-family:Calibri;font-weight:bold;">Policy No</span>
+                </td>
+                <td align="left" class="style6" 
+                    style="border-style: none; background-color: #F0E1E7">
+                    <input name="txtPolNo" type="text" value="4408010036815" maxlength="14" id="txtPolNo" class="textboxex" placeholder="Enter Policy No." style="font-family:Calibri;" />
+                    <span id="RequiredFieldValidator2" title="Policy No Required" style="color:Red;visibility:hidden;">*</span>
+
+                        
+                </td>
+             
+            </tr>
+
+            <tr>
+                <td align="left" class="style5" style="background-color: #F0E1E7">
+                    <span id="Label1" class="labels" style="color:#921841;font-family:Calibri;font-weight:bold;">Passcode</span>
+                </td>
+                <td align="left" class="style6" 
+                    style="border-style: none; background-color: #F0E1E7">
+                    <input name="txt_Policy_No" type="text" maxlength="6" id="txt_Policy_No" class="textboxex" placeholder="Enter Passcode" style="font-family:Calibri;" />
+                    <span id="RequiredFieldValidator1" title="Policy No Required" style="color:Red;visibility:hidden;">*</span>
+
+                        
+                </td>
+             
+            </tr>
+            <tr>
+                <td align="left" class="style5" style="background-color: #F0E1E7">
+                    &nbsp;</td>
+                <td align="left" class="style6" style="background-color: #F0E1E7">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td align="left" class="style5" style="background-color: #F0E1E7">
+                    &nbsp;</td>
+                <td align="center" class="style6" style="background-color: #F0E1E7">
+                    <input type="button" name="btnSubmit" value="Submit" onclick="this.disabled = &#39;true&#39;; this.value = &#39;Please Wait ...&#39;;__doPostBack(&#39;btnSubmit&#39;,this.value=&#39;Downloaded.&#39;);WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;login&quot;, &quot;&quot;, false, true))" id="btnSubmit" style="color:#871844;background-color:#DFDADC;font-family:Calibri;font-weight:bold;height:25px;width:100px;" />
+                </td>
+            </tr>
+        </table>
+
+        <br />
+        <br />
+        
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("RequiredFieldValidator2"), document.getElementById("RequiredFieldValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var RequiredFieldValidator2 = document.all ? document.all["RequiredFieldValidator2"] : document.getElementById("RequiredFieldValidator2");
+RequiredFieldValidator2.controltovalidate = "txtPolNo";
+RequiredFieldValidator2.validationGroup = "login";
+RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator2.initialvalue = "";
+var RequiredFieldValidator1 = document.all ? document.all["RequiredFieldValidator1"] : document.getElementById("RequiredFieldValidator1");
+RequiredFieldValidator1.controltovalidate = "txt_Policy_No";
+RequiredFieldValidator1.validationGroup = "login";
+RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator1.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('RequiredFieldValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidator2'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"FilterType":14,"id":"FilteredTextBoxExtender1"}, null, null, $get("txtPolNo"));
+});
+
+document.getElementById('RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidator1'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"FilterType":14,"id":"FilteredTextBoxExtender2"}, null, null, $get("txt_Policy_No"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

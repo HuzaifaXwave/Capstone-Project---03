@@ -16,25 +16,32 @@
 
 <body>
     <div class="container d-flex flex-row justify-content-between">
-        <div class="w-50 d-flex flex-column justify-content-between m-2">
+        <div class="w-50 d-flex flex-column justify-content-between m-2 account-pages">
             <div>
                 <a href=""><i class="bi bi-cart4 fs-3 rounded-circle py-0 px-1 bg-danger text-white"></i></a>
                 <a class="navbar-brand fw-semibold fs-3 ps-1 text-dark" href="#">Cartzilla</a>
             </div>
             <div class="mb-5">
-                <h2 class="fs-3 fw-bolder">Welcome back</h2>
-                <span>Don`t have an account? <a class="text-black text-decoration-none border-bottom border-dark fs-6" href="">Create an account</a></span>
-                <div class="my-3">
-                    <input class="w-75 border-1 border-body-secondary rounded-2 py-2 px-2" type="email" placeholder="Email">
+                <form id="sign-In-form">
+                    <h2 class="fs-3 fw-bolder">Welcome back</h2>
+                    <span>Don`t have an account? <a
+                            class="text-black text-decoration-none border-bottom border-dark fs-6" href="./SignUp.html">Create an
+                            account</a></span>
+                    <div class="my-3">
+                        <input class="w-75 border-1 border-body-secondary rounded-2 py-2 px-2" id="user-Email" type="email"
+                            placeholder="Email" required>
+                        <br>
+                        <input class="mt-1 w-75 border-1 border-body-secondary rounded-2 py-2 px-2" id="user-Password" type="Password"
+                            placeholder="Password" required>
+                    </div>
+                    <div class="d-flex flex-row align-items-center">
+                        <input type="checkbox">Remember for 30 days</input>
+                        <span class="ms-2">Forgot password?</span>
+                    </div>
                     <br>
-                    <input class="mt-1 w-75 border-1 border-body-secondary rounded-2 py-2 px-2" type="Password" placeholder="Password">
-                </div>
-                <div class="d-flex flex-row align-items-center">
-                    <input type="checkbox">Remember for 30 days</input>
-                    <span class="ms-2">Forgot password?</span>
-                </div>
-                <br>
-                <button class="w-75 bg-danger border-0 py-2 text-white rounded-2 fw-bold">Sign In</button>
+                    <button type="submit" class="w-75 bg-danger border-0 py-2 text-white rounded-2 fw-bold" onclick="signIn()">Sign In</button>
+                </form>
+
             </div>
         </div>
         <div class="w-50 border carousel-bg rounded-2 mt-3">
@@ -42,7 +49,7 @@
         </div>
     </div>
 
-    <script src="../script/script.js"></script>
+    <script src="../pages/sign-In.js"></script>
 </body>
 
 </html>
