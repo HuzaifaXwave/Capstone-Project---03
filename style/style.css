@@ -53,7 +53,7 @@
   background: #000;
   transition: width 0.3s;
 }
-.dropdown div button:hover::after{
+.dropdown div button:hover::after {
   width: 100%;
 }
 .canvas-btn {
@@ -118,7 +118,21 @@
 }
 
 .product-txt span {
-  font-size: 12px;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+.product-txt span::after {
+  cursor: pointer;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+.product-txt span:hover::after {
+  width: 100%;
 }
 /* product-img-animation */
 .img-animation {
