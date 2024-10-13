@@ -116,6 +116,9 @@
 .product-bg div h1 {
   font-size: 65px;
 }
+.product-txt span {
+  font-size: 14px;
+}
 
 .product-txt span {
   display: inline-block;
@@ -132,7 +135,7 @@
   transition: width 0.3s;
 }
 .product-txt span:hover::after {
-  width: 100%;
+  width: 80%;
 }
 /* product-img-animation */
 .img-animation {
@@ -170,6 +173,25 @@
 .progress-bar span {
   height: 5px;
 }
+#newsletter-icons i {
+  transition: 0.5s;
+  background-color: #dc3545;
+}
+#newsletter-icons i:hover {
+  cursor: pointer;
+  background-color: #000;
+  transition: 0.5s;
+}
+.brandCards{
+  transition: 0.8s;
+  border: 1px solid rgb(233, 228, 228);
+}
+.brandCards:hover{
+  cursor: pointer;
+  transition: 0.8s;
+  border: 2px solid black;
+}
+
 #responsive-banner {
   display: none;
 }
@@ -186,6 +208,12 @@
   }
   #left-category-list {
     display: none !important;
+  }
+  .product-bg {
+    padding: 20px 0px;
+  }
+  .resp-service-section {
+    margin: 0px !important;
   }
   .service-cards {
     flex-direction: column;
